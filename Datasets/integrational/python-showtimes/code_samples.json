@@ -1,0 +1,6 @@
+[
+  {
+    "id": 1,
+    "code": "from flask import Flask\nfrom werkzeug.exceptions import NotFound\nimport json\nimport os\nfrom flask import make_response\n\n\ndef root_dir():\n    return os.path.dirname(os.path.realpath(__file__ + '/..'))\n\n\ndef nice_json(arg):\n    response = make_response(json.dumps(arg, sort_keys = True, indent=4))\n    response.headers['Content-type'] = 'application/json'\n    return response\n\napp = Flask(__name__)\n\nwith open('{}/database/showtimes.json'.format(root_dir()), 'r') as f:\n    showtimes = json.load(f)\n\n\n@app.route('/', methods=['GET'])\ndef hello():\n    return nice_json({\n        'uri': '/',\n        'subresource_uris': {\n            'showtimes': '/showtimes',\n            'showtime': '/showtimes/<date>'\n        }\n    })\n\n\n@app.route('/showtimes', methods=['GET'])\ndef showtimes_list():\n    return nice_json(showtimes)\n\n\n@app.route('/showtimes/<date>', methods=['GET'])\ndef showtimes_record(date):\n    if date not in showtimes:\n        raise NotFound\n    print(showtimes[date])\n    return nice_json(showtimes[date])\n\ndef run(app):\n    app.run(port=5002, debug=True)\n"
+  }
+]

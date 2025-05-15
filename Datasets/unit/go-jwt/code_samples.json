@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "code_path": "jwt",
+    "mutated_path": "jwt-m1",
+    "function_name": "jsonMessageByte"
+  },
+  {
+    "id": 2,
+    "code_path": "jwt",
+    "mutated_path": "jwt-m2",
+    "function_name": "CreateJWT"
+  },
+  {
+    "id": 3,
+    "code_path": "jwt",
+    "mutated_path": "jwt-m3",
+    "function_name": "ValidateJWT"
+  },
+  {
+    "id": 4,
+    "code_path": "jwt",
+    "mutated_path": "jwt-m4",
+    "function_name": "Auth"
+  },
+  {
+    "id": 5,
+    "code_path": "jwt",
+    "mutated_path": "jwt-m5",
+    "function_name": "LoginHandler"
+  },
+  {
+    "id": 6,
+    "code_path": "jwt",
+    "mutated_path": "jwt-m6",
+    "function_name": "HomeHandler"
+  },
+  {
+    "id": 7,
+    "code_path": "jwt",
+    "mutated_path": "jwt-m7",
+    "function_name": "SecureHandler"
+  }
+]

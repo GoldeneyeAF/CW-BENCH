@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "code_path": "bookstore",
+    "mutated_path": "bookstore-m1",
+    "function_name": "jsonMessageByte"
+  },
+  {
+    "id": 2,
+    "code_path": "bookstore",
+    "mutated_path": "bookstore-m2",
+    "function_name": "checkError"
+  },
+  {
+    "id": 3,
+    "code_path": "bookstore",
+    "mutated_path": "bookstore-m3",
+    "function_name": "handleGetBooks"
+  },
+  {
+    "id": 4,
+    "code_path": "bookstore",
+    "mutated_path": "bookstore-m4",
+    "function_name": "handleGetBookById"
+  },
+  {
+    "id": 5,
+    "code_path": "bookstore",
+    "mutated_path": "bookstore-m5",
+    "function_name": "handleAddBook"
+  },
+  {
+    "id": 6,
+    "code_path": "bookstore",
+    "mutated_path": "bookstore-m6",
+    "function_name": "handleUpdateBook"
+  },
+  {
+    "id": 7,
+    "code_path": "bookstore",
+    "mutated_path": "bookstore-m7",
+    "function_name": "handleDeleteBookById"
+  },
+  {
+    "id": 8,
+    "code_path": "bookstore",
+    "mutated_path": "bookstore-m8",
+    "function_name": "getBooks"
+  },
+  {
+    "id": 9,
+    "code_path": "bookstore",
+    "mutated_path": "bookstore-m9",
+    "function_name": "getBookById"
+  },
+  {
+    "id": 10,
+    "code_path": "bookstore",
+    "mutated_path": "bookstore-m10",
+    "function_name": "saveBooks"
+  }
+]

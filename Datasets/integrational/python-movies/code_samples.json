@@ -1,0 +1,6 @@
+[
+  {
+    "id": 1,
+    "code": "\nfrom flask import Flask\nfrom werkzeug.exceptions import NotFound\nimport json\nimport os\nfrom flask import make_response\n\ndef root_dir():\n    return os.path.dirname(os.path.realpath(__file__ + '/..'))\n\ndef nice_json(arg):\n    response = make_response(json.dumps(arg, sort_keys = True, indent=4))\n    response.headers['Content-type'] = 'application/json'\n    return response\n\napp = Flask(__name__)\n\nwith open('{}/database/movies.json'.format(root_dir()), 'r') as f:\n    movies = json.load(f)\n\n@app.route('/', methods=['GET'])\ndef hello():\n    return nice_json({\n        'uri': '/',\n        'subresource_uris': {\n            'movies': '/movies',\n            'movie': '/movies/<id>'\n        }\n    })\n\n@app.route('/movies/<movieid>', methods=['GET'])\ndef movie_info(movieid):\n    if movieid not in movies:\n        raise NotFound\n\n    result = movies[movieid]\n    result['uri'] = '/movies/{}'.format(movieid)\n\n    return nice_json(result)\n\n\n@app.route('/movies', methods=['GET'])\ndef movie_record():\n    return nice_json(movies)\n\ndef run(app):\n    app.run(port=5001, debug=True)\n"
+  }
+]

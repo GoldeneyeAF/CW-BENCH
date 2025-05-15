@@ -1,0 +1,6 @@
+[
+  {
+    "id": 1,
+    "code": "\nimport os\nimport json\nfrom flask import make_response\nfrom flask import Flask\nfrom werkzeug.exceptions import NotFound\n\ndef root_dir():\n    return os.path.dirname(os.path.realpath(__file__ + '/..'))\napp = Flask(__name__)\n\nwith open('{}/database/bookings.json'.format(root_dir()), 'r') as f:\n    bookings = json.load(f)\n\n@app.route('/', methods=['GET'])\ndef hello():\n    return nice_json({\n        'uri': '/',\n        'subresource_uris': {\n            'bookings': '/bookings',\n            'booking': '/bookings/<username>'\n        }\n    })\n\n\n@app.route('/bookings', methods=['GET'])\ndef booking_list():\n    return nice_json(bookings)\n\n@app.route('/bookings/<username>', methods=['GET'])\ndef booking_record(username):\n    if username not in bookings:\n        raise NotFound\n\n    return nice_json(bookings[username])\n\ndef root_dir():\n    return os.path.dirname(os.path.realpath(__file__ + '/..'))\n\ndef nice_json(arg):\n    response = make_response(json.dumps(arg, sort_keys = True, indent=4))\n    response.headers['Content-type'] = 'application/json'\n    return response\n    \ndef start(app):\n    app.run(port=5003, debug=True)\n"
+  }
+]

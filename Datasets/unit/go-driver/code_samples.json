@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "code_path": "config/config",
+    "mutated_path": "config/config-m1",
+    "function_name": "NewConfig"
+  },
+  {
+    "id": 2,
+    "code_path": "repository/repository",
+    "mutated_path": "repository/repository-m1",
+    "function_name": "NewDriverRepository"
+  },
+  {
+    "id": 3,
+    "code_path": "repository/repository",
+    "mutated_path": "repository/repository-m2",
+    "function_name": "InsertTrip"
+  },
+  {
+    "id": 4,
+    "code_path": "repository/repository",
+    "mutated_path": "repository/repository-m3",
+    "function_name": "GetTrips"
+  },
+  {
+    "id": 5,
+    "code_path": "repository/repository",
+    "mutated_path": "repository/repository-m4",
+    "function_name": "Create"
+  },
+  {
+    "id": 6,
+    "code_path": "repository/repository",
+    "mutated_path": "repository/repository-m5",
+    "function_name": "Update"
+  },
+  {
+    "id": 7,
+    "code_path": "repository/repository",
+    "mutated_path": "repository/repository-m6",
+    "function_name": "Find"
+  },
+  {
+    "id": 8,
+    "code_path": "repository/repository",
+    "mutated_path": "repository/repository-m7",
+    "function_name": "SendCommand"
+  },
+  {
+    "id": 9,
+    "code_path": "service/service",
+    "mutated_path": "service/service-m1",
+    "function_name": "NewDriverService"
+  },
+  {
+    "id": 10,
+    "code_path": "service/service",
+    "mutated_path": "service/service-m2",
+    "function_name": "GetTrips"
+  },
+  {
+    "id": 11,
+    "code_path": "service/service",
+    "mutated_path": "service/service-m3",
+    "function_name": "GetRide"
+  },
+  {
+    "id": 12,
+    "code_path": "service/service",
+    "mutated_path": "service/service-m4",
+    "function_name": "UpdateStatus"
+  },
+  {
+    "id": 13,
+    "code_path": "service/service",
+    "mutated_path": "service/service-m5",
+    "function_name": "NewTrip"
+  },
+  {
+    "id": 14,
+    "code_path": "repository/repository",
+    "mutated_path": "repository/repository-m3",
+    "function_name": "UpdateDriverLocation"
+  },
+  {
+    "id": 15,
+    "code_path": "api/api",
+    "mutated_path": "api/api-m1",
+    "function_name": "NewDriverHandler"
+  },
+  {
+    "id": 16,
+    "code_path": "api/api",
+    "mutated_path": "api/api-m2",
+    "function_name": "GetTrips"
+  },
+  {
+    "id": 17,
+    "code_path": "api/api",
+    "mutated_path": "api/api-m3",
+    "function_name": "Trips"
+  },
+  {
+    "id": 18,
+    "code_path": "api/api",
+    "mutated_path": "api/api-m4",
+    "function_name": "TripsID"
+  },
+  {
+    "id": 19,
+    "code_path": "api/api",
+    "mutated_path": "api/api-m5",
+    "function_name": "Cancel"
+  },
+  {
+    "id": 20,
+    "code_path": "api/api",
+    "mutated_path": "api/api-m6",
+    "function_name": "Accept"
+  },
+  {
+    "id": 21,
+    "code_path": "api/api",
+    "mutated_path": "api/api-m7",
+    "function_name": "Start"
+  },
+  {
+    "id": 22,
+    "code_path": "api/api",
+    "mutated_path": "api/api-m8",
+    "function_name": "End"
+  }
+]

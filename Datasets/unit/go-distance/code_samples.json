@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "code_path": "distance/distance",
+    "mutated_path": "distance/distance-m",
+    "function_name": "Distance"
+  },
+  {
+    "id": 2,
+    "code_path": "config/config",
+    "mutated_path": "config/config-m",
+    "function_name": "NewConfig"
+  },
+  {
+    "id": 3,
+    "code_path": "usecase/usecase",
+    "mutated_path": "usecase/usecase-m1",
+    "function_name": "Create"
+  },
+  {
+    "id": 4,
+    "code_path": "usecase/usecase",
+    "mutated_path": "usecase/usecase-m2",
+    "function_name": "FindDrivers"
+  },
+  {
+    "id": 5,
+    "code_path": "usecase/usecase",
+    "mutated_path": "usecase/usecase-m3",
+    "function_name": "UpdateDriverLocation"
+  },
+  {
+    "id": 6,
+    "code_path": "controller/controller",
+    "mutated_path": "controller/controller-m1",
+    "function_name": "GetDrivers"
+  },
+  {
+    "id": 7,
+    "code_path": "controller/controller",
+    "mutated_path": "controller/controller-m2",
+    "function_name": "PostDriverLocation"
+  },
+  {
+    "id": 8,
+    "code_path": "repository/repository",
+    "mutated_path": "repository/repository-m1",
+    "function_name": "Create"
+  },
+  {
+    "id": 9,
+    "code_path": "repository/repository",
+    "mutated_path": "repository/repository-m2",
+    "function_name": "FindDrivers"
+  },
+  {
+    "id": 10,
+    "code_path": "repository/repository",
+    "mutated_path": "repository/repository-m3",
+    "function_name": "UpdateDriverLocation"
+  },
+  {
+    "id": 11,
+    "code_path": "repository/repository",
+    "mutated_path": "repository/repository-m4",
+    "function_name": "NewLocationRepository"
+  }
+]
