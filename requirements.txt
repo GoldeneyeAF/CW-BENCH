@@ -1,0 +1,11 @@
+openai
+tqdm
+requests
+numpy
+pandas
+lxml
+flask
+opencv-python
+markdown2
+pyquery
+
